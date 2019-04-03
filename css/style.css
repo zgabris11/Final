@@ -1,0 +1,28 @@
+.top-header{
+    background-color: #505050;
+}
+.top-header ul{
+    position: relative;
+    top: 10px;
+}
+.top-header li{
+    list-style: none;
+    display: inline;
+    padding: 5px;
+    color: white;
+}
+.top-header li a{
+    color: white;
+}
+.top-header img{
+    position: relative;
+    top: 6px;
+}
+.nav-bar li a{
+    position: relative;
+    top: 30px;
+}
+.home img{
+    padding: 5px;
+    margin-right: 10px;
+}
