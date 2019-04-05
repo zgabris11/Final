@@ -22,7 +22,33 @@
     position: relative;
     top: 30px;
 }
-.home img{
-    padding: 5px;
-    margin-right: 10px;
+.first {
+    background-image: url(../images/bedroom.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 550px;
+}
+.inner-first{
+    padding: 2rem 3rem;
+    color: red;
+}
+.second {
+    background-image: url(../images/livingroom.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 550px;
+}
+.inner-second {
+    padding: 2rem 3rem;
+    color: red;
+}
+.third {
+    background-image: url(../images/office.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 550px;
+}
+.inner-third {
+    padding: 2rem 3rem;
+    color: red;
 }
