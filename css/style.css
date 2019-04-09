@@ -1,5 +1,12 @@
+body{
+    background-color: grey;
+}
 .top-header{
     background-color: #505050;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 .top-header ul{
     position: relative;
@@ -18,37 +25,50 @@
     position: relative;
     top: 6px;
 }
+.top-header input{
+    position: relative;
+    left: 35%;
+    top: 40px;
+}
 .nav-bar li a{
     position: relative;
     top: 30px;
 }
-.first {
-    background-image: url(../images/bedroom.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 550px;
+.bedimg{
+    min-width: 1024px;
+    min-height: 100%;
+    width:100%;
+    height: auto;
+    border: 2px solid #505050;
+} 
+.info{
+    background-color: gray;
+    margin-top: 10px;
+} 
+.info p{
+    text-align: center;
+    color: white;
 }
-.inner-first{
-    padding: 2rem 3rem;
-    color: red;
+.info img{
+    position: relative;
+    left: 70px;
 }
-.second {
-    background-image: url(../images/livingroom.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 550px;
+.livingroom{
+   background-image: url("../images/livingroom.jpg")
 }
-.inner-second {
-    padding: 2rem 3rem;
-    color: red;
+.footer{
+    background-color: #505050;
+    
 }
-.third {
-    background-image: url(../images/office.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 550px;
+.footer h2 {
+    color: white;
 }
-.inner-third {
-    padding: 2rem 3rem;
-    color: red;
+.footer p{
+    color: white
+}
+.services h3{
+    color:white;
+}
+.services li{
+    color:white;
 }
