@@ -3,72 +3,118 @@ body{
 }
 .top-header{
     background-color: #505050;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
 }
 .top-header ul{
-    position: relative;
-    top: 10px;
+    padding: 0;
 }
 .top-header li{
     list-style: none;
-    display: inline;
     padding: 5px;
     color: white;
 }
-.top-header li a{
+
+.top-header li:first-child {
+    padding: 0;
+}
+
+.top-header a{
     color: white;
 }
-.top-header img{
-    position: relative;
-    top: 6px;
-}
-.top-header input{
-    position: relative;
-    left: 35%;
-    top: 40px;
-}
-.nav-bar li a{
-    position: relative;
-    top: 30px;
-}
+
 .bedimg{
-    min-width: 1024px;
-    min-height: 100%;
-    width:100%;
+    max-width: 100%;
     height: auto;
-    border: 2px solid #505050;
-} 
-.info{
-    background-color: gray;
-    margin-top: 10px;
-} 
-.info p{
+    margin-bottom: 20px;
+}
+
+.info img {
+    width: 350px;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+.info h1{
     text-align: center;
     color: white;
+    padding-bottom: 10px;
 }
-.info img{
-    position: relative;
-    left: 70px;
+
+.info-box {
+    margin-bottom: 30px;
 }
-.livingroom{
-   background-image: url("../images/livingroom.jpg")
+
+.top-header input{
+    width: 100%;
+    margin-bottom: 20px;
 }
-.footer{
-    background-color: #505050;
-    
-}
-.footer h2 {
-    color: white;
-}
-.footer p{
-    color: white
-}
-.services h3{
-    color:white;
-}
-.services li{
-    color:white;
+
+@media(min-width: 1200px){
+
+    .top-header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .top-header ul{
+        position: relative;
+        top: 10px;
+    }
+    .top-header li{
+        display: inline;
+    }
+
+    .top-header img{
+        position: relative;
+        top: 6px;
+    }
+    .top-header input{
+        width: 275px;
+        margin: 0;
+        position: relative;
+        left: 0;
+        top: 40px;
+    }
+    .nav-bar li a{
+        position: relative;
+        top: 30px;
+    }
+
+    .info {
+        background-color: gray;
+        margin-top: 10px;
+    } 
+    .info p{
+        text-align: center;
+        color: white;
+    }
+    .info img{
+        max-width: 200px;
+        height: auto;
+        position: relative;
+        left: 70px;
+    }
+    .livingroom{
+       background-image: url("../images/livingroom.jpg");
+    }
+    .footer{
+        background-color: #505050;
+        
+    }
+    .footer h2 {
+        color: white;
+    }
+    .footer p{
+        color: white
+    }
+    .services h3{
+        color:white;
+    }
+    .services ul{
+        padding: 0px;
+    }
+    .services li{
+        color:white;
+        list-style: none;
+        padding: 0;
 }
