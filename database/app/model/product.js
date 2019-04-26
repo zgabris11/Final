@@ -1,4 +1,3 @@
-
 class Product {
     constructor(id,name,description,price,img) {
         this.id = id;

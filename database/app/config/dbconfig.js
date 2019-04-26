@@ -24,12 +24,20 @@ const db = new sqlite3.Database(DB_PATH,
 
 let init = function () {
     db.run("CREATE TABLE if not exists product (" + 
-        " id INTEGER PRIMARY KEY," + 
+        " id INTEGER PRIMARY KEY," +
+        " category TEXT," +
         " name TEXT," + 
-        " price TEXT," +
-        " img TEXT" +
+        " price TEXT" +
         ")"
     );
+    db.run("CREATE TABLE if not exists product (" + 
+        " id INTEGER PRIMARY KEY," +
+        " category TEXT," +
+        " name TEXT," + 
+        " price TEXT" +
+        ")"
+    );
+   
 };
 
 module.exports = {
