@@ -4,18 +4,18 @@ import React from 'react'
 function Header() {
     return(
         <>
-        <div class="top-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 nav-bar">
+        <div className="top-header">
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm-8 nav-bar">
                         <ul>
-                            <li><img src="images/comfort.PNG" alt="comfort" style="width: 110px; height: 100px"/></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="products.html">Product</a></li>
+                            <li><img src="images/comfort.PNG" alt="comfort" style={{width: '110px', height: '100px'}} /></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/products">Product</a></li>
                         </ul>
                     </div>
-                    <div class="col-xs-4 col-sm-4">
+                    <div className="col-xs-4 col-sm-4">
                         <ul>
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">(555)-444-2345</a></li>
