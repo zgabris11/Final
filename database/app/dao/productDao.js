@@ -14,26 +14,48 @@ class ProductDao {
             for(const row of rows) {
                 products.push(new Product(
                     row.id,
-                    row.category,
                     row.name,
-                    row.price
+                    row.description,
+                    row.price,
+                    row.img,
+                    row.category
                 ));
             }
             return products;
         });
     }
-    findByName(id) {
-        let sqlRequest = "SELECT * FROM product WHERE id = '" + id + "'";
+    findOne(id) {
+        let sqlRequest = "SELECT * FROM product WHERE id=" + id;
+
         return this.common.findAll(sqlRequest).then(rows => {
             let products = [];
-            for (const row of rows) {
+            for(const row of rows) {
                 products.push(new Product(
                     row.id,
-                    row.category, 
                     row.name,
-                    row.price
-                    )
-                );
+                    row.description,
+                    row.price,
+                    row.img,
+                    row.category
+                ));
+            }
+            return products;
+        });
+    }
+    findByName(category) {
+        let sqlRequest = "SELECT * FROM product WHERE category='" + category + "'";
+
+        return this.common.findAll(sqlRequest).then(rows => {
+            let products = [];
+            for(const row of rows) {
+                products.push(new Product(
+                    row.id,
+                    row.name,
+                    row.description,
+                    row.price,
+                    row.img,
+                    row.category
+                ));
             }
             return products;
         });

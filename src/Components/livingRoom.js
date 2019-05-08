@@ -17,7 +17,7 @@ function Living() {
                                     <ul>
                                         <li><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum laborum fuga et nostrum labore dolor.</p></li>
                                         <li>250.00</li>
-                                        <li><a href="#">Add To Cart</a></li>
+                                        <li><a href="#">View</a></li>
                                     </ul>
                                 </div>
                                 <div className="col-sm-4">
@@ -26,7 +26,7 @@ function Living() {
                                     <ul>
                                         <li><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum laborum fuga et nostrum labore dolor.</p></li>
                                         <li>150.00</li>
-                                        <li><a href="#">Add To Cart</a></li>
+                                        <li><a href="#">View</a></li>
                                     </ul>
                                 </div>
                                 <div className="col-sm-4">
@@ -35,7 +35,7 @@ function Living() {
                                     <ul>
                                         <li><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum laborum fuga et nostrum labore dolor.</p></li>
                                         <li>200.00</li>
-                                        <li><a href="#">Add To Cart</a></li>
+                                        <li><a href="#">View</a></li>
                                     </ul>
                                 </div>
                             </div>

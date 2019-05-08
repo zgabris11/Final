@@ -18,10 +18,10 @@ class ProductController {
         this.productDao.findOne(id)
             .then(this.common.findSuccess(res))
             .catch(this.common.findError(res));
-    };
+    }
     findByName(req, res) {
-        let name = req.params.name;
-        this.productDao.findByName(name)
+        let category = req.params.category;
+        this.productDao.findByName(category)
             .then(this.common.findSuccess(res))
             .catch(this.common.findError(res));
     };
@@ -50,13 +50,6 @@ class ProductController {
         return this.productDao.update(product)
             .then(this.common.editSuccess(res))
             .catch(this.common.serverError(res));
-    };
-    findOne(req, res) {
-        let id = req.params.id;
-
-        this.productDao.findOne(id)
-            .then(this.common.editSuccess(res))
-            .catch(this.common.findError(res));
     };
     deleteById(req, res) {
         let id = req.params.id;
